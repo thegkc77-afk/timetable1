@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Table</title>
+    <style>
+        body {
+          font-family: 'Poppins', sans-serif;
+          background-color: white;
+          padding: 20px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          
+        }
+
+        h1 {
+          color: rebeccapurple;
+          margin-bottom: 20px;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+        }
+
+        .container {
+          width: 100%;
+          max-width: 1200px;
+          background-color: white;
+          border-radius: 8px;
+          border: 2px solid black;
+  
+        }
+       .timetable {
+         width: 100%;
+         border-collapse: collapse;
+         min-width: 800px;
+        }
+ 
+        .timetable th, 
+        .timetable td {
+         border: 1px solid white;
+         padding: 15px;
+         text-align: center;
+        }
+
+        .day {
+         background-color: rgb(95, 95, 221); 
+         color: white;
+         font-weight: 500;
+         text-transform: uppercase;
+         font-size: 15px;
+        }
+    
+        .time-col {
+        background-color: white;
+        font-weight: bold;
+        color: rgb(65, 65, 116);
+        width: 110px;
+        }
+
+        .lecture {
+          background-color: white;
+          line-height: 1.6; 
+          font-size: 15px;
+        }
+        .break-row {
+          background-color: white;
+          color: black;
+          font-weight: bold;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+        }
+        .project {
+          background-color: white; 
+          color: black;
+          font-weight: 500;
+        }
+        .holiday {
+          background-color: #f8d7da; 
+          color: #721c24;
+        }
+
+        .no-class {
+          background-color: #f8f9fa;
+          color: black;
+        }
+
+    </style>
+</head>
+
+<body>
+
+  <h1>Time Table</h1>
+  <div class="container">
+    <table class="timetable">
+        <thead>
+            <tr class="day">
+                <th>Timing</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+                <th>Sunday</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="time-col">9:00 - 10:00</td>
+                <td class="lecture">Math for AI/ML <br> Sanjay Sir</td>
+                <td class="lecture">HTML & CSS <br> Nitish Sir</td>
+                <td class="lecture">Math for AI/ML <br> Sanjay Sir</td>
+                <td class="lecture">JavaScript <br> Nitish Sir</td>
+                <td class="lecture">Math for AI/ML <br> Sanjay Sir</td>
+                <td class="no-class">No Class</td>
+                <td class="holiday">Holiday</td>
+            </tr>
+            <tr>
+                <td class="time-col">10:00 - 11:00</td>
+                <td class="lecture">English <br> Akanksha Ma'am</td>
+                <td class="lecture">Math for AI/ML <br> Sanjay Sir</td>
+                <td class="lecture">English <br> Akanksha Ma'am</td>
+                <td class="lecture">Math for AI/ML <br> Sanjay Sir</td>
+                <td class="lecture">English <br> Akanksha Ma'am</td>
+                <td class="no-class">No Class</td>
+                <td class="holiday">Holiday</td>
+            </tr>
+            <tr>
+                <td class="time-col">11:00 - 12:00</td>
+                <td class="lecture">Python <br> Nashit Sir</td>
+                <td class="lecture">JavaScript <br> Nitish Sir</td>
+                <td class="lecture">Python <br> Nashit Sir</td>
+                <td class="lecture">HTML & CSS <br> Nitish Sir</td>
+                <td class="lecture">Python <br> Nitish Sir</td>
+                <td class="no-class">No Class</td>
+                <td class="holiday">Holiday</td>
+            </tr>
+            <tr>
+                <td class="time-col">12:00 - 1:00</td>
+                <td class="break-row">Break</td>
+                <td class="break-row">Break</td>
+                <td class="break-row">Break</td>
+                <td class="break-row">Break</td>
+                <td class="break-row">Break</td>
+                <td class="no-class">No Class</td>
+                <td class="holiday">Holiday</td>                
+            </tr>
+            <tr>
+                <td class="time-col">1:00 - 2:00</td>
+                <td class="lecture">GFG Learning</td>
+                <td class="lecture">Book Reading</td>
+                <td class="lecture">Novel Reading</td>
+                <td class="lecture">GFG Quiz</td>
+                <td class="lecture">Typing Practice</td>
+                <td class="no-class">No Class</td>
+                <td class="holiday">Holiday</td>
+            </tr>
+            <tr>
+                <td class="time-col">2:00 Onwards</td>
+                <td class="project">Working on <br> project</td>
+                <td class="project">Working on <br> project</td>
+                <td class="project">Working on <br> project</td>
+                <td class="project">Working on <br> project</td>
+                <td class="project">Working on <br> project</td>
+                <td class="no-class">No Class</td>
+                <td class="holiday">Holiday</td>
+            </tr>
+        </tbody>
+    </table>
+  </div>
+
+</body>
+</html>
